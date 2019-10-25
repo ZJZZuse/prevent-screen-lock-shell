@@ -5,7 +5,8 @@
 ## usage
 
 1. 安装依赖
-2. 下载运行脚本即可，也可以根据需求修改时间。
+2. 下载运行脚本运行即可，也可以根据需求修改时间。
+    - 也可以自己拷贝脚本运行
 
 ## depend on
 
@@ -16,4 +17,4 @@ Install-Module -Name Wasp
 
 ## link
 
-<https://gitee.com/zeeus/prevent-screen-lock>
+[java版](https://gitee.com/zeeus/prevent-screen-lock)
