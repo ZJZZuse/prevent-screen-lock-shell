@@ -1,3 +1,4 @@
+Add-Type -AssemblyName System.Windows.Forms
 Add-Accelerator SendKeys           System.Windows.Forms.SendKeys       -EA SilentlyContinue
 
 # 你可以根据你的实际情况修改间隔时间
