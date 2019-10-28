@@ -10,6 +10,6 @@ while ($true) {
     $key = '{BREAK}'
     get-date
     echo "press key $key`n"
-    Send-Input $key
+    Send-UIKeys -keys $key
     sleep -s $INTERVAL
 }
