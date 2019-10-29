@@ -16,6 +16,7 @@ while ($true) {
     }
     catch {
         Write-Host "An error occurred:"
+        Write-Host $_
         Write-Host $_.ScriptStackTrace
     }
     sleep -s $INTERVAL
