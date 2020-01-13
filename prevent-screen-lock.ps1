@@ -1,3 +1,5 @@
+Import-Module WASP
+
 Add-Type -AssemblyName System.Windows.Forms
 Add-Accelerator SendKeys           System.Windows.Forms.SendKeys       -EA SilentlyContinue
 
@@ -8,10 +10,11 @@ get-date
 echo `start`
 
 while ($true) {
-    $key = '{BREAK}'
+    $key = '{SCROLLLOCK}'
     get-date
     echo  "press key $key`n"
     try {
+        [SendKeys]::SendWait($key)
         [SendKeys]::SendWait($key)
     }
     catch {
