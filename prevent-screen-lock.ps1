@@ -1,7 +1,4 @@
-Import-Module WASP
-
 Add-Type -AssemblyName System.Windows.Forms
-Add-Accelerator SendKeys           System.Windows.Forms.SendKeys       -EA SilentlyContinue
 
 # 你可以根据你的实际情况修改间隔时间
 New-Variable -name INTERVAL -Value (60 * 3) -Option Constant -Description 'for 5mins lock default'
@@ -14,8 +11,8 @@ while ($true) {
     get-date
     echo  "press key $key`n"
     try {
-        [SendKeys]::SendWait($key)
-        [SendKeys]::SendWait($key)
+        [System.Windows.Forms.SendKeys]::SendWait($key)
+        [System.Windows.Forms.SendKeys]::SendWait($key)
     }
     catch {
         Write-Host "An error occurred:"
